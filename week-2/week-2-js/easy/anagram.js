@@ -5,7 +5,10 @@
 */
 
 function isAnagram(str1, str2) {
-
+//if the length is not equal they can't be anagram
+if(str1.length!=str2.length) return false;
+  //sorting and comparing
+return (str1.split('').sort().join('')==str2.split('').sort().join(''));
 }
 
 module.exports = isAnagram;
